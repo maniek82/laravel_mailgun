@@ -8,8 +8,8 @@ Route::get('/', function () {
         'content'=>'Sprawdz jak mozesz odebra ta nagrode:)'
         
         ];
-        // Mail::send('emails.test',$data, function($message) {
-        //     $message->to('mariusz.tripler@gmail.com','Mariusz')->subject('Wygralas buziaka');
-        // });
+        Mail::send('emails.test',$data, function($message) {
+            $message->to('mariusz.tripler@gmail.com','Mariusz')->subject('Wygralas buziaka');
+        });
     
 });
