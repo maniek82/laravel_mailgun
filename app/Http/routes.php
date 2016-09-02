@@ -9,7 +9,9 @@ Route::get('/', function () {
         
         ];
         Mail::send('emails.test',$data, function($message) {
+
             $message->to('mariusz.tripler@gmail.com','Mariusz')->subject('Testing email features');
+
         });
     
 });
